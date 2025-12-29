@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scarlet Jade</title>
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", Arial, sans-serif;
+      background: linear-gradient(135deg, #a8e6a3, #d4f8d4);
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: #6c63ff;
+      color: white;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav {
+      background: #ffdd57;
+      padding: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #6c63ff;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    button {
+      background: #6c63ff;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #554fe0;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Scarlet Jade</h1>
+
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Fun Stuff</a>
+  </nav>
+
+  <section>
+
+<button onclick="randomBackground()">Change Background!</button>
+
+
+<button onclick="showMessage()">Click Me!</button>
+
+    <div class="card">
+      <h2>👋 Hello!</h2>
+      <p>This is a colorful website I made using HTML & CSS.</p>
+      <button>Click for Fun</button>
+    </div>
+
+    <div class="card">
+      <h2>🌈 Why This Site?</h2>
+      <p>
+        To practice coding, try colors, and have fun learning how websites work!
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>🚀 Made for fun • 2025</p>
+  </footer>
+
+<script>
+  function showMessage() {
+    alert("Hello! You clicked the button! 🎉");
+  }
+</script>
+
+<script>
+  function randomBackground() {
+    // Generate a random color in hex format
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.background = randomColor;
+  }
+</script>
+
+
+</body>
+</html>
